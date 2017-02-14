@@ -9,9 +9,9 @@ class Store < ActiveRecord::Base
 
 end
 
-b = Store.create(name: 'Burnaby', annual_revenue: 300000, mens_apparel: true, womens_apparel: true )
-r = Store.create(name: 'Richmond', annual_revenue: 300000, mens_apparel: false, womens_apparel: true )
-g = Store.create(name: 'Gastown', annual_revenue: 300000, mens_apparel: true, womens_apparel: false )
+Store.create(name: 'Burnaby', annual_revenue: 300000, mens_apparel: true, womens_apparel: true )
+Store.create(name: 'Richmond', annual_revenue: 300000, mens_apparel: false, womens_apparel: true )
+Store.create(name: 'Gastown', annual_revenue: 300000, mens_apparel: true, womens_apparel: false )
 
 store_count = Store.count
 
